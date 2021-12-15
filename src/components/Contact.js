@@ -118,8 +118,8 @@ const Contact = () => {
                             ADDRESS
                         </h2>
                         <p className={`mt-1 ${ (darkmode === false) ? 'text-gray-100' : 'text-gray-200' }`}>
-                            Stephan St. 60 <br />
-                            Berlin, GER
+                            Chaco 1479 <br />
+                            Corrientes, AR
                         </p>
                     </div>
                     <div className="lg:w-2/2 px-6 mt-4 lg:mt-0">
@@ -127,12 +127,12 @@ const Contact = () => {
                             EMAIL
                         </h2>
                         <button className="text-indigo-400 leading-relaxed">
-                            mansi.manito@gmail.com
+                           juancruzmart93@gmail.com
                         </button>
                         <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
                             PHONE
                         </h2>
-                        <p className={`leading-relaxed ${ (darkmode === false) ? 'text-gray-100' : 'text-gray-200' }`}>+4901744538564</p>
+                        <p className={`leading-relaxed ${ (darkmode === false) ? 'text-gray-100' : 'text-gray-200' }`}>(+54) 3791065380</p>
                     </div>
                 </div>
                 </div>
@@ -191,7 +191,7 @@ const Contact = () => {
                 </div>
                 <button
                     type="submit"
-                    className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                    className="text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-300 rounded text-lg">
                     Contact me
                 </button>
                 </form>

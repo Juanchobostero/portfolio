@@ -18,7 +18,10 @@ export default function MyApp() {
     return (
       <div style={{
         display: 'flex',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        padding: '0',
+        overflow: 'hidden',
+        margin: '0 0'
       }}>
         <Document
           file = { pdf }

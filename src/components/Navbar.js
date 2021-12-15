@@ -1,4 +1,4 @@
-import React, { Children, useContext } from 'react';
+import React, { useContext } from 'react';
 import { ArrowRightIcon } from "@heroicons/react/solid";
 import { themeContext } from '../context/theme/themeContext';
 import AlertDialogSlide from './MuiDialog';

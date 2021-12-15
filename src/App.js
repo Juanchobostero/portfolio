@@ -8,6 +8,7 @@ import Testimonials from './components/Testimonials';
 import "tailwindcss/tailwind.css";
 import ThemeState from './context/theme/themeState';
 import FloatingWhatsApp from 'react-floating-whatsapp';
+import Footer from './components/Footer';
 
 
 
@@ -22,6 +23,7 @@ function App() {
           <Skills />
           <Testimonials />
           <Contact />
+          <Footer />
           <FloatingWhatsApp 
             phoneNumber='+4901744538564'
             accountName='Santiago Manso Castro'
