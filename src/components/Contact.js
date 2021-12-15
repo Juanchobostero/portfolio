@@ -132,7 +132,7 @@ const Contact = () => {
                         <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
                             PHONE
                         </h2>
-                        <p className={`leading-relaxed ${ (darkmode === false) ? 'text-gray-100' : 'text-gray-200' }`}>(+54) 3791065380</p>
+                        <p className={`leading-relaxed ${ (darkmode === false) ? 'text-gray-100' : 'text-gray-200' }`}>(+54) 3794065380</p>
                     </div>
                 </div>
                 </div>
@@ -192,7 +192,7 @@ const Contact = () => {
                 <button
                     type="submit"
                     className="text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-300 rounded text-lg">
-                    Contact me
+                    Submit
                 </button>
                 </form>
             </div>

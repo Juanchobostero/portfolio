@@ -6,7 +6,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 export default function MyApp() {
 
-    const pdf = 'http://localhost:3000/cv.pdf'
+    const pdf = 'http://localhost:3000/cv.pdf';
 
     const [numPages, setNumPages] = useState(14);
     const [pageNumber, setPageNumber] = useState(1);
