@@ -109,7 +109,7 @@ const Contact = () => {
                     marginHeight={0}
                     marginWidth={0}
                     style={{ filter: "opacity(0.7)" }}
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2426.9540443416545!2d13.349463715999395!3d52.53426564292405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a8519d8ad43a9d%3A0xee8b61f02f7ae059!2sStephanstra%C3%9Fe%2060%2C%2010559%20Berlin!5e0!3m2!1ses-419!2sde!4v1639426408716!5m2!1ses-419!2sde"
+                    src="https://www.google.com/maps/embed/v1/place?q=chaco+1479&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
                     
                 />
                 <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
