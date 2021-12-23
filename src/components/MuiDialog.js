@@ -1,10 +1,6 @@
 import * as React from 'react';
-import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
-import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
-import DialogContentText from '@mui/material/DialogContentText';
-import DialogTitle from '@mui/material/DialogTitle';
 import Slide from '@mui/material/Slide';
 import { themeContext } from '../context/theme/themeContext';
 import { useContext } from 'react'
@@ -16,10 +12,12 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 export default function AlertDialogSlide({children}) {
 
+  // eslint-disable-next-line
   const [fullWidth, setFullWidth] = React.useState(true); // atributes to set width
+  // eslint-disable-next-line
   const [maxWidth, setMaxWidth] = React.useState('sm');   // to the dialog  
   const themesContext = useContext(themeContext);
-  const { darkmode, lightTheme, darkTheme } = themesContext;
+  const { darkmode } = themesContext;
 
 
   const [open, setOpen] = React.useState(false);
@@ -37,7 +35,7 @@ export default function AlertDialogSlide({children}) {
       {/* the following is the element that will trigger the dialog, in this case its an <a>TAG</a> */}
       <a 
         href="#testimonials" 
-        className={`mr-5 ${(darkmode === false) ? 'text-black hover:text-gray-300' : 'text-white hover:text-black' }`} 
+        className={`hidden sm:flex mr-5 ${(darkmode === false) ? 'text-black hover:text-gray-300' : 'text-white hover:text-black' }`} 
         onClick={handleClickOpen}>
           Resume
       </a>

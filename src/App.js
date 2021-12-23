@@ -25,8 +25,11 @@ function App() {
           <Contact />
           <Footer />
           <FloatingWhatsApp 
-            phoneNumber='+4901744538564'
-            accountName='Santiago Manso Castro'
+            avatar='./yo.png' 
+            phoneNumber='+543794065380'
+            accountName='Juan Cruz Martinez'
+            statusMessage='Típicamente responde en 1 hora'
+            chatMessage='Hola!. Cómo puedo ayudarte ?'
             allowEsc={true}
             allowClickAway={true}
           />
