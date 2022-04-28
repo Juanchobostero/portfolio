@@ -35,6 +35,14 @@ const Footer = () => {
                         target="_blank"
                         className='hover:opacity-50'
                     />
+                    <SocialIcon 
+                        url='https://www.instagram.com/_juancruzmartinez/'
+                        fgColor='#dedad9'
+                        style={{ height: 75, width: 75, marginLeft: '1rem' }}
+                        rel='noopener noreferred'
+                        target="_blank"
+                        className='hover:opacity-50'
+                    />
                 </div>
         </section>
     )

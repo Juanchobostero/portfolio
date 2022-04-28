@@ -24,7 +24,7 @@ const Navbar = () => {
     return ( 
         <header className={`bg-${ darkmode === false ? 'gray-100': 'gray-800'} md:sticky top-0 z-10`}>
             <div className="container justify-between mx-auto flex flex-wrap p-5 flex-row sm:items-center">
-                <h3 className={`hidden md:flex title-font font-medium ${ (darkmode === false) ? 'text-black' : 'text-white' } mb-4 md:mb-4`}>
+                <h3 className={`hidden md:flex title-font font-medium ${ (darkmode === false) ? 'text-black hover:opacity-50' : 'text-white hover:opacity-50' } mb-4 md:mb-4`}>
                     <Link to="about" smooth={true} duration={1000} className="text-xl md:text-base cursor-pointer ml-3">
                         Juan Cruz Martinez
                     </Link>
@@ -50,8 +50,8 @@ const Navbar = () => {
                         duration={1000} 
                         className={`hidden sm:flex cursor-pointer mr-5 
                             ${(darkmode === false) 
-                                ? 'text-black hover:text-gray-300' 
-                                : 'text-white hover:text-black' }`
+                                ? 'text-black hover:opacity-50' 
+                                : 'text-white hover:opacity-50' }`
                             }
                     >
                         Past Work
@@ -62,12 +62,12 @@ const Navbar = () => {
                         duration={1000} 
                         className={`hidden sm:flex cursor-pointer mr-5 
                             ${(darkmode === false) 
-                                ? 'text-black hover:text-gray-300' 
-                                : 'text-white hover:text-black' }`}>
+                                ? 'text-black hover:opacity-50' 
+                                : 'text-white hover:opacity-50' }`}>
                         Skills
                     </Link>
 
-                    <Link  
+                    {/* <Link  
                         to="testimonials" 
                         smooth={true} 
                         duration={1000} 
@@ -76,7 +76,7 @@ const Navbar = () => {
                                 ? 'text-black hover:text-gray-300' 
                                 : 'text-white hover:text-black' }`}>
                         Testimonials
-                    </Link>
+                    </Link> */}
 
                     <AlertDialogSlide > {/* import fn from MuiDialog.js that renders the Slide Dialog */}
                         <MyApp /> {/* RESUME div */}

@@ -16,8 +16,11 @@ const About = () => {
                 {/* <br className="hidden lg:inline-block" />This is my portfolio page ! */}
               </h1>
               <p className="mb-8 leading-relaxed">
-                Fullstack developer, based in Corrientes, Argentina. I mainly use MERN stack to develop entire web apps; as well as a bit of 
-                React-Native recently to explore the mobile environment.
+                Web developer, based in Corrientes, Argentina. I usually works in web apps management and develop.
+                I am open to keep learn about multiples tecnologies for improve and refine my skills.
+              </p>
+              <p className="mb-8 leading-relaxed">
+                Good Music Lover.
               </p>
               <div className="flex justify-center">
                 <Link to="contact" smooth={true} duration={1000} className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg cursor-pointer">
@@ -28,7 +31,7 @@ const About = () => {
                 </Link>
               </div>
             </div>
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <div className="lg:max-w-lg lg:w-1/4 md:w-1/2 w-5/6">
               <img
                 className="object-cover object-center rounded"
                 alt="hero"

@@ -37,7 +37,7 @@ const Contact = () => {
         if (status === 'success') {
             return Swal.fire(
                 'Success',
-                'Your message was sended, thanks !',
+                'Your message was sended to my email. I will contact you, thanks !',
                 'success',
                 'Cool'
             );

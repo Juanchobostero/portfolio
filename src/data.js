@@ -1,35 +1,11 @@
 export const projects = [
     {
-      title: "React Reserve",
-      subtitle: "MERN Stack",
+      title: "Olalá Mayoristas",
+      subtitle: "Jewels store",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./project-1.gif",
-      link: "https://reactbootcamp.com",
-    },
-    {
-      title: "React Tracks",
-      subtitle: "React and Python",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./project-2.gif",
-      link: "https://reactbootcamp.com",
-    },
-    {
-      title: "DevChat",
-      subtitle: "React and Firebase",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./project-3.gif",
-      link: "https://reactbootcamp.com",
-    },
-    {
-      title: "Epic Todo App",
-      subtitle: "React Hooks",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./project-4.gif",
-      link: "https://reactbootcamp.com",
+        "This site was maked using Html, CSS Grid, JavasCript and Codeigniter3 for the backend. I have worked in the frontend.",
+      image: "./olala.gif",
+      link: "https://olalamayoristas.com/",
     },
   ];
   
@@ -60,12 +36,20 @@ export const projects = [
       url: 'https://es.reactjs.org/'
     },
     {
-      name: 'Node',
-      url: 'https://nodejs.org/es/'
-    },
-    {
       name: 'Material UI',
       url: 'https://mui.com/'
+    },
+    {
+      name: 'PostgreSQL',
+      url: 'https://www.postgresql.org/docs/'
+    },
+    {
+      name: 'Python',
+      url: 'https://www.python.org/'
+    },
+    {
+      name: 'Git',
+      url: 'https://git-scm.com/doc'
     }
   ];
   

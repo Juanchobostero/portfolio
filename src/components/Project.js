@@ -3,6 +3,8 @@ const Project = ({ project }) => {
         <>
             <a
                 href={project.link}
+                rel="noopener noreferred noreferrer"
+                target="_blank"
                 className="sm:w-1/2 w-100 p-4">
                 <div className="flex relative">
                     <img
