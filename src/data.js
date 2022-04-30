@@ -7,6 +7,38 @@ export const projects = [
       image: "./olala.gif",
       link: "https://olalamayoristas.com/",
     },
+    {
+      title: "Pacients Admin",
+      subtitle: "Manage appointments with patients",
+      description:
+        "This site was maked using Reactjs.",
+      image: "./pacients.gif",
+      link: "https://boring-heyrovsky-688bb0.netlify.app/",
+    },
+    {
+      title: "Budget",
+      subtitle: "Budget calculator",
+      description:
+        "This site was maked using Reactjs.",
+      image: "./budget.gif",
+      link: "https://eloquent-goldberg-0c4f8c.netlify.app/",
+    },
+    {
+      title: "Cryptos quoter",
+      subtitle: "Allows to quote better known cryptocurrencies",
+      description:
+        "This site was maked using Reactjs and access to an API for get information.",
+      image: "./cryptos.gif",
+      link: "https://stoic-ptolemy-95b2df.netlify.app/",
+    },
+    {
+      title: "RLP Consulting",
+      subtitle: "SPA about RLP Consulting",
+      description:
+        "This site was maked using Reactjs.",
+      image: "./rlp.gif",
+      link: "https://www.consultingrlp.com/",
+    },
   ];
   
   export const testimonials = [
