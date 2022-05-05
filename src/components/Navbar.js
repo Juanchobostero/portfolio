@@ -29,15 +29,17 @@ const Navbar = () => {
                         Juan Cruz Martinez
                     </Link>
                 </h3>
-                <div className='flex sm:hidden'>
+                <div className='flex md:hidden'>
                     <Stack direction="row" spacing={2}>
-                        <Avatar 
-                            sx={{ 
-                                bgcolor: deepOrange[500],
-                                width: 60, 
-                                height: 60 
-                            }}>JC
-                        </Avatar>
+                        <Link to="about" smooth={true} duration={1000} className="text-xl md:text-base cursor-pointer ml-3">
+                            <Avatar 
+                                sx={{ 
+                                    bgcolor: deepOrange[500],
+                                    width: 60, 
+                                    height: 60 
+                                }}>JC
+                            </Avatar>
+                        </Link>   
                     </Stack>
                 </div>
                 <nav 
@@ -48,7 +50,7 @@ const Navbar = () => {
                         to="projects" 
                         smooth={true} 
                         duration={1000} 
-                        className={`hidden sm:flex cursor-pointer mr-5 
+                        className={`hidden md:flex cursor-pointer mr-5 
                             ${(darkmode === false) 
                                 ? 'text-black hover:opacity-50' 
                                 : 'text-white hover:opacity-50' }`
@@ -60,7 +62,7 @@ const Navbar = () => {
                         to="skills" 
                         smooth={true} 
                         duration={1000} 
-                        className={`hidden sm:flex cursor-pointer mr-5 
+                        className={`hidden md:flex cursor-pointer mr-5 
                             ${(darkmode === false) 
                                 ? 'text-black hover:opacity-50' 
                                 : 'text-white hover:opacity-50' }`}>
