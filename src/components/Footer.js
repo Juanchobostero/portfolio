@@ -12,7 +12,7 @@ const Footer = () => {
         <section 
             id="footer" 
             className={`${( darkmode === false ) 
-                ? 'bg-gray-100' : 'bg-gray-900'}`}>
+                ? 'bg-stone-500' : 'bg-black'}`}>
                 <div className={`container px-5 py-10 mx-auto text-center h-80 pb-10`}>
                     <ShareIcon className="w-10 inline-block mb-4"/>
                     <h1 className={`title-font sm:text-4xl text-3xl mb-4 font-medium ${ ( darkmode === false ) ? 'text-black' : 'text-white' }`}>

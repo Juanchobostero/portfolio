@@ -22,9 +22,9 @@ const Navbar = () => {
     }
 
     return ( 
-        <header className={`bg-${ darkmode === false ? 'gray-100': 'gray-800'} md:sticky top-0 z-10`}>
+        <header className={`bg-${ darkmode === false ? 'stone-500': 'black'} top-0 sticky z-100`}>
             <div className="container justify-between mx-auto flex flex-wrap p-5 flex-row sm:items-center">
-                <h3 className={`hidden md:flex title-font font-medium ${ (darkmode === false) ? 'text-black hover:opacity-50' : 'text-white hover:opacity-50' } mb-4 md:mb-4`}>
+                <h3 className={`hidden md:flex title-font font-medium ${ darkmode === false ? 'text-black hover:opacity-50' : 'text-white hover:opacity-50' } mb-4 md:mb-4`}>
                     <Link to="about" smooth={true} duration={1000} className="text-xl md:text-base cursor-pointer ml-3">
                         Juan Cruz Martinez
                     </Link>
@@ -103,14 +103,14 @@ const Navbar = () => {
                         }
                     </div>
 
-                    <svg 
+                    {/* <svg 
                         xmlns="http://www.w3.org/2000/svg" 
                         className="flex w-16 cursor-pointer sm:hidden" 
                         fill="none" 
                         viewBox="0 0 24 24" 
                         stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-                    </svg> 
+                    </svg>  */}
                 </nav>
 
                 {/* Darkmode button WEB*/}
@@ -138,7 +138,7 @@ const Navbar = () => {
                 <div className="hidden sm:flex ">
                     <Link
                         to="contact"
-                        className="hidden sm:flex cursor-pointer bg-gray-900 inline-flex bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded"
+                        className="hidden sm:flex cursor-pointer inline-flex bg-green-400 text-black font-bold border-0 py-1 px-3 focus:outline-none hover:opacity-50 rounded"
                         smooth={true} 
                         duration={1000}
                     >

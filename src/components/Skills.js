@@ -9,7 +9,7 @@ const Skills = () => {
     const { darkmode } = themesContext;
 
     return ( 
-        <section id="skills" className={`${ (darkmode === false) ? 'bg-gray-100' : 'bg-gray-900' }`}>
+        <section id="skills" className={`${ (darkmode === false) ? 'bg-stone-500' : 'bg-black' }`}>
             <div className="container px-5 py-10 mx-auto">
                 <div className="text-center mb-20">
                 <ChipIcon className="w-10 inline-block mb-4" />
