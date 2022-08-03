@@ -9,6 +9,7 @@ import "tailwindcss/tailwind.css";
 import ThemeState from './context/theme/themeState';
 import FloatingWhatsApp from 'react-floating-whatsapp';
 import Footer from './components/Footer';
+import { motion } from "framer-motion";
 
 
 
@@ -16,7 +17,13 @@ function App() {
 
   return (
       <ThemeState>
-        <main className="text-gray-400 body-font">
+        <motion.div 
+          className="text-gray-400 body-font"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 2 }}
+        >
           <Navbar />
           <About />
           <Projects />
@@ -28,12 +35,12 @@ function App() {
             avatar='./yo.png' 
             phoneNumber='+543794065380'
             accountName='Juan Cruz Martinez'
-            statusMessage='Usually answers in few minutes'
-            chatMessage='Hello!. How can i help you ?'
+            statusMessage='Usualmente responde en unos minutos'
+            chatMessage='Hola!. Cómo puedo ayudarte ?'
             allowEsc={true}
             allowClickAway={true}
           />
-        </main>
+        </motion.div>
       </ThemeState>
   );
 }

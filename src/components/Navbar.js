@@ -22,11 +22,13 @@ const Navbar = () => {
     }
 
     return ( 
-        <header className={`bg-${ darkmode === false ? 'stone-500': 'black'} top-0 sticky z-100`}>
-            <div className="container justify-between mx-auto flex flex-wrap p-5 flex-row sm:items-center">
+        <header className={`bg-${ darkmode === false ? 'stone-500': 'black'} top-0 sticky z-10000 p-5`}>
+            <div className="container justify-between mx-auto flex flex-wrap p-5 z-10000 flex-row sm:items-center">
                 <h3 className={`hidden md:flex title-font font-medium ${ darkmode === false ? 'text-black hover:opacity-50' : 'text-white hover:opacity-50' } mb-4 md:mb-4`}>
                     <Link to="about" smooth={true} duration={1000} className="text-xl md:text-base cursor-pointer ml-3">
-                        Juan Cruz Martinez
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                        </svg>
                     </Link>
                 </h3>
                 <div className='flex md:hidden'>
@@ -56,7 +58,7 @@ const Navbar = () => {
                                 : 'text-white hover:opacity-50' }`
                             }
                     >
-                        Past Work
+                        Desarrollos
                     </Link>
                     <Link 
                         to="skills" 
@@ -66,7 +68,7 @@ const Navbar = () => {
                             ${(darkmode === false) 
                                 ? 'text-black hover:opacity-50' 
                                 : 'text-white hover:opacity-50' }`}>
-                        Skills
+                        Habilidades
                     </Link>
 
                     {/* <Link  
@@ -86,7 +88,7 @@ const Navbar = () => {
 
                     {/* Darkmode button MOVILE*/}
                     <div className="flex sm:hidden">
-                        <div className="relative inline-block w-12 mr-2 justify-center select-none transition duration-200 ease-in">
+                        <div className="sm: relative inline-block w-12 justify-right select-none transition duration-200 ease-in">
                             <input type="checkbox" name="toggle" id="toggle" onChange={handleChange} className="toggle-checkbox absolute block w-6 h-6 rounded-full bg-gray-500 border-4 appearance-none cursor-pointer"/>
                             <label htmlFor="toggle" className="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
                         </div>
@@ -116,7 +118,7 @@ const Navbar = () => {
                 </nav>
 
                 {/* Darkmode button WEB*/}
-                <div className="hidden sm:flex flex-row mr-8">
+                <div className="hidden sm:flex mr-1">
                     <div className="relative inline-block w-12 mr-2 select-none transition duration-200 ease-in">
                         <input type="checkbox" name="toggle" id="toggle" onChange={handleChange} className="toggle-checkbox absolute block w-6 h-6 rounded-full bg-gray-500 border-4 appearance-none cursor-pointer"/>
                         <label htmlFor="toggle" className="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
@@ -140,11 +142,11 @@ const Navbar = () => {
                 <div className="hidden sm:flex ">
                     <Link
                         to="contact"
-                        className="hidden sm:flex cursor-pointer inline-flex bg-green-400 text-black font-bold border-0 py-1 px-3 focus:outline-none hover:opacity-50 rounded"
+                        className="hidden md:flex cursor-pointer inline-flex bg-green-400 text-black font-bold border-0 py-1 px-3 focus:outline-none hover:opacity-50 rounded"
                         smooth={true} 
                         duration={1000}
                     >
-                        Contact Me
+                        Contactame
                     <ArrowRightIcon className="w-4 h-5 ml-1" />
                     </Link>
                 </div>

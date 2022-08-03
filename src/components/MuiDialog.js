@@ -19,7 +19,6 @@ export default function AlertDialogSlide({children}) {
   const themesContext = useContext(themeContext);
   const { darkmode } = themesContext;
 
-
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -33,12 +32,11 @@ export default function AlertDialogSlide({children}) {
   return (
     <div className='prueba'>
       {/* the following is the element that will trigger the dialog, in this case its an <a>TAG</a> */}
-      <a 
-        href="#testimonials" 
-        className={`md:flex text-center align-center mr-5 ${(darkmode === false) ? 'text-black hover:opacity-50' : 'text-white hover:opacity-50' }`} 
+      <button 
+        className={`flex text-center align-center mr-5 ${(darkmode === false) ? 'text-black hover:opacity-50' : 'text-white hover:opacity-50' }`} 
         onClick={handleClickOpen}>
-          Resume
-      </a>
+          Mi CV
+      </button >
         <Dialog
           fullWidth={fullWidth}
           maxWidth={maxWidth}

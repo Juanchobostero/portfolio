@@ -36,15 +36,15 @@ const Contact = () => {
     const showAlert = status => {
         if (status === 'success') {
             return Swal.fire(
-                'Success',
-                'Your message was sended to my email. I will contact you, thanks !',
+                'OK',
+                'Tu mensaje ha sido enviado. Me contactaré a la brevedad. Gracias !',
                 'success',
                 'Cool'
             );
         } else {
             return Swal.fire(
                 'Error',
-                'There was an error !',
+                'Ha ocurrido un error !',
                 'error',
                 'Cool'
             ); 
@@ -59,8 +59,8 @@ const Contact = () => {
         // valid data
         if(name.trim() === '' || email.trim() === '' || message.trim() === '') {
             Swal.fire(
-                'Error!',
-                'All fields are required',
+                'Error',
+                'Todos los campos son requeridos !',
                 'error',
                 'Cool'
             );
@@ -115,7 +115,7 @@ const Contact = () => {
                 <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
                     <div className="lg:w-2/2 px-6">
                         <h2 className="title-font font-semibold text-white tracking-widest text-xs">
-                            ADDRESS
+                            Dirección
                         </h2>
                         <p className={`mt-1 ${ (darkmode === false) ? 'text-gray-100' : 'text-gray-200' }`}>
                             Chaco 1479 <br />
@@ -130,7 +130,7 @@ const Contact = () => {
                            juancruzmart93@gmail.com
                         </button>
                         <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
-                            PHONE
+                            Teléfono
                         </h2>
                         <p className={`leading-relaxed ${ (darkmode === false) ? 'text-gray-100' : 'text-gray-200' }`}>(+54) 3794065380</p>
                     </div>
@@ -144,14 +144,14 @@ const Contact = () => {
                 
                 >
                 <h2 className={`${ (darkmode === false) ? 'text-black' : 'text-white' } sm:text-4xl text-3xl mb-1 font-medium title-font`}>
-                    Contact Me
+                    Contactame
                 </h2>
                 <p className="leading-relaxed mb-5">
-                    Get in touch with me, you can also try the whatsapp floating button to send me a whatsapp text!
+                    Puedes mandarme un correo mediante el formulario, o contactarme directamente al Whatsapp.
                 </p>
                 <div className="relative mb-4">
                     <label htmlFor="name" className={`leading-7 text-sm ${ (darkmode === false) ? 'text-gray-900' : 'text-gray-400' }`}>
-                    Name
+                    Nombre
                     </label>
                     <input
                     type="text"
@@ -179,7 +179,7 @@ const Contact = () => {
                     <label
                     htmlFor="message"
                     className={`leading-7 text-sm ${ (darkmode === false) ? 'text-gray-900' : 'text-gray-400' }`}>
-                    Message
+                    Mensaje
                     </label>
                     <textarea
                     id="message"
@@ -192,7 +192,7 @@ const Contact = () => {
                 <button
                     type="submit"
                     className="text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-300 rounded text-lg">
-                    Submit
+                    Enviar
                 </button>
                 </form>
             </div>
