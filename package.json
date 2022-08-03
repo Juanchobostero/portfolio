@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@craco/craco": "^6.4.2",
+    "@craco/craco": "^5.9.0",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@heroicons/react": "^1.0.5",
@@ -13,12 +13,13 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "emailjs-com": "^3.2.0",
+    "postcss-flexbugs-fixes": "^5.0.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-floating-whatsapp": "^4.0.5",
     "react-pdf": "^5.6.0",
     "react-router-dom": "^6.0.2",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^5.0.1",
     "react-scroll": "^1.8.4",
     "react-social-icons": "^5.6.1",
     "sweetalert2": "^11.3.0",
@@ -50,7 +51,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.8.8",
-    "postcss": "^7.0.39",
     "stylelint-config-recommended": "^6.0.0",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
   }
