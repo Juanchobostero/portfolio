@@ -127,7 +127,9 @@ const Contact = () => {
                             EMAIL
                         </h2>
                         <button className="text-indigo-400 leading-relaxed">
-                           juancruzmart93@gmail.com
+                            <a href='mailto:juancruzmart93@gmail.com'>
+                                juancruzmart93@gmail.com
+                            </a>
                         </button>
                         <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
                             Teléfono

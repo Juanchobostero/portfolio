@@ -1,41 +1,41 @@
 export const projects = [
     {
       title: "Olalá Mayoristas",
-      subtitle: "Jewels store",
+      subtitle: "Tienda de joyas",
       description:
-        "This site was maked using Html, CSS Grid, JavasCript and Codeigniter3 for the backend. I have worked in the frontend.",
+        "Sitio realizado utilizando Html, CSS Grid, JavasCript y Codeigniter3 para backend. Mi trabajo fue realizar el frontend",
       image: "./olala.gif",
       link: "https://olalamayoristas.com/",
     },
     {
-      title: "Pacients Admin",
-      subtitle: "Manage appointments with patients",
+      title: "Administrador de Pacientes",
+      subtitle: "Generador de citas con pacientes",
       description:
-        "This site was maked using Reactjs.",
+        "Este sitio fue realizado con Reactjs.",
       image: "./pacients.gif",
       link: "https://boring-heyrovsky-688bb0.netlify.app/",
     },
     {
-      title: "Budget",
-      subtitle: "Budget calculator",
+      title: "Presupuesto",
+      subtitle: "Calculador de presupuesto semanal",
       description:
-        "This site was maked using Reactjs.",
+      "Este sitio fue realizado con Reactjs.",
       image: "./budget.gif",
       link: "https://eloquent-goldberg-0c4f8c.netlify.app/",
     },
     {
-      title: "Cryptos quoter",
-      subtitle: "Allows to quote better known cryptocurrencies",
+      title: "Cotizador de Criptomonedas",
+      subtitle: "Permite cotizar criptomonedas mas conocidas",
       description:
-        "This site was maked using Reactjs and access to an API for get information.",
+        "Este sitio fue realizado con Reactjs, junto con el acceso a una API para obtener la información.",
       image: "./cryptos.gif",
       link: "https://stoic-ptolemy-95b2df.netlify.app/",
     },
     {
       title: "RLP Consulting",
-      subtitle: "SPA about RLP Consulting",
+      subtitle: "SPA sobre RLP Consulting",
       description:
-        "This site was maked using Reactjs.",
+        "Este sitio fue realizado con Reactjs.",
       image: "./rlp.gif",
       link: "https://www.consultingrlp.com/",
     },

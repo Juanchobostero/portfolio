@@ -10,8 +10,7 @@ import ThemeState from './context/theme/themeState';
 import FloatingWhatsApp from 'react-floating-whatsapp';
 import Footer from './components/Footer';
 import { motion } from "framer-motion";
-
-
+import ScrollButton from './components/ScrollButton';
 
 function App() {
 
@@ -31,6 +30,7 @@ function App() {
           {/* <Testimonials /> */}
           <Contact />
           <Footer />
+          <ScrollButton />
           <FloatingWhatsApp 
             avatar='./yo.png' 
             phoneNumber='+543794065380'
