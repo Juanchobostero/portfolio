@@ -32,8 +32,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts set PORT=3001 && craco start",
-    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts set PORT=3001 && craco build",
+    "start": "react-scripts set PORT=3001 && craco start",
+    "build": "react-scripts set PORT=3001 && craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
   },
