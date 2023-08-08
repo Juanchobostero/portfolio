@@ -1,12 +1,13 @@
-import React, { useContext } from 'react';
+import React from 'react';
+// import React, { useContext } from 'react';
 import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
 import { skills } from "../data";
-import { themeContext } from '../context/theme/themeContext';
+// import { themeContext } from '../context/theme/themeContext';
 
 const Skills = () => {
 
-    const themesContext = useContext(themeContext);
-    const { darkmode } = themesContext;
+    // const themesContext = useContext(themeContext);
+    // const { darkmode } = themesContext;
 
     return ( 
         <section 

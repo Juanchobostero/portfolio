@@ -1,11 +1,12 @@
-import React, { useContext } from 'react';
-import { themeContext } from '../context/theme/themeContext';
+import React from 'react';
+// import React, { useContext } from 'react';
+// import { themeContext } from '../context/theme/themeContext';
 import { Link } from 'react-scroll';
 
 const About = () => {
 
-    const themesContext = useContext(themeContext);
-    const { darkmode } = themesContext;
+    // const themesContext = useContext(themeContext);
+    // const { darkmode } = themesContext;
 
     return ( 
         <section 
