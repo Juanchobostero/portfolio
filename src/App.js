@@ -17,7 +17,7 @@ function App() {
   return (
       <ThemeState>
         <motion.div 
-          className="text-gray-400 body-font"
+          className="text-gray-400 body-font font-mono"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -32,7 +32,7 @@ function App() {
           <Footer />
           <ScrollButton />
           <FloatingWhatsApp 
-            avatar='./yo.png' 
+            avatar='./yo.jpeg' 
             phoneNumber='+543794065380'
             accountName='Juan Cruz Martinez'
             statusMessage='Usualmente responde en unos minutos'

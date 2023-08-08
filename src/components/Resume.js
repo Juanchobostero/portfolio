@@ -20,14 +20,15 @@ export default function MyApp() {
     return (
       <div style={{
         display: 'flex',
-        justifyContent: 'center',
+        justifyContent: 'justify',
         padding: '0',
-        overflow: 'hidden',
+        overflow: 'visible',
         margin: '0 0'
       }}>
         <Document
           file = { pdf }
           onLoadSuccess={onDocumentLoadSuccess}
+          
         >
           <Page pageNumber={pageNumber} />
         </Document>
