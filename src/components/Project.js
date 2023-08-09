@@ -2,17 +2,17 @@ import { Fragment } from "react";
 
 const Project = ({ project }) => {
     return (
-        <Fragment>
+        <Fragment className="-z-100">
             <a
                 href={project.link}
                 rel="noopener noreferred noreferrer"
                 target="_blank"
                 className="sm:w-1/2 w-100 p-4"
             >
-                <div className="flex relative">
+                <div className="flex relative -z-100">
                     <img
                         alt={project.title}
-                        className="absolute inset-0 w-full h-full object-cover object-cente"
+                        className="-z-100 absolute inset-0 w-full h-full object-cover object-center"
                         src={project.image}
                     />
                     <div className="px-8 py-10 relative w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">

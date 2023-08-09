@@ -21,7 +21,7 @@ const Projects = () => {
                         Siéntete libre y notificame acerca de bugs/sugerencias.
                     </p>
                 </div>
-                <div className="flex flex-wrap -m-4">
+                <div className="flex flex-wrap -m-4 -z-100">
                     {projects.map((project) => (
                         <Project
                             key={project.image}
