@@ -35,7 +35,7 @@ export default function AlertDialogSlide({children}) {
       <button
         // className={`flex text-center align-center mr-5 ${(darkmode === false) ? 'text-black hover:opacity-50' : 'text-white hover:opacity-50' }`}
         onClick={handleClickOpen}>
-          <span class="hover:opacity-50 bg-green-100 text-green-800 text-xl font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-blue-300"><b>CV</b></span>
+          <span className="hover:opacity-50 bg-green-100 text-green-800 text-xl font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-blue-300"><b>CV</b></span>
       </button >
         <Dialog
           fullWidth={fullWidth}
