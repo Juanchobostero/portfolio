@@ -1,20 +1,17 @@
-import React from 'react';
-// import React, { useContext } from 'react';
+import React, { useContext } from 'react';
 import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
 import { skills } from "../data";
-// import { themeContext } from '../context/theme/themeContext';
+import { themeContext } from '../context/theme/themeContext';
 
 const Skills = () => {
 
-    // const themesContext = useContext(themeContext);
-    // const { darkmode } = themesContext;
+    const themesContext = useContext(themeContext);
+    const { darkmode } = themesContext;
 
     return ( 
         <section 
             id="skills" 
-            className={`bg-auto`}
-            // style={"background-image: url('./test.png'); height: 400px"}
-            style={{backgroundImage: `url('./test4.jpg')`}}
+            className={`${ ( darkmode === false ) ? 'text-gray-900 bg-stone-500' : 'text-gray-100 bg-black' } body-font`}
         >
             <div className="container px-5 py-20 mx-auto">
                 <div className="text-center mb-20">

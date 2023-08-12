@@ -1,28 +1,33 @@
-import React from 'react';
-// import React, { useContext } from 'react';
-// import { themeContext } from '../context/theme/themeContext';
+import React, { useContext } from 'react';
+import { themeContext } from '../context/theme/themeContext';
 import { Link } from 'react-scroll';
+import TypeWritter from 'typewriter-effect';
 
 const About = () => {
 
-    // const themesContext = useContext(themeContext);
-    // const { darkmode } = themesContext;
+    const themesContext = useContext(themeContext);
+    const { darkmode } = themesContext;
 
     return ( 
         <section 
           id="about" 
-          className={`bg-auto bg-gradient-to-l hover:bg-gradient-to-r`}
-          // style={"background-image: url('./test.png'); height: 400px"}
-          style={{backgroundImage: `url('./test4.jpg')`}}
+          className={`${ ( darkmode === false ) ? 'text-gray-900 bg-stone-500' : 'text-gray-100 bg-black' } body-font`}
         >
           <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
             <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
               <h1 className={`title-font sm:text-4xl text-3xl mb-4 font-medium text-white`}>
-                JUAN CRUZ MARTINEZ
+                <TypeWritter 
+                  options={{
+                    autoStart: true,
+                    loop: true,
+                    delay: 50,
+                    strings: ['JUAN CRUZ MARTINEZ | Desarrollador WEB']
+                  }}
+                />
               </h1>
               <p className="mb-8 leading-relaxed">
-                Desarrollador web, nacido en la ciudad de Corrientes Capital, <b>Argentina</b>. <br></br>
-                Abierto a continuar aprendiendo sobre multiples tecnologías para probar y mejorar mis habilidades.
+                Nacido en la ciudad de Corrientes Capital, <b>Argentina</b>. <br></br>
+                Abierto y predispuesto al aprendizaje continuo para mejorar día a día.
               </p>
               <p className="mb-8 leading-relaxed">
                 Amante de la buena música
