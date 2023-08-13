@@ -3,6 +3,7 @@ import Swal from 'sweetalert2';
 import emailkey from '../emailkey';
 import emailjs from 'emailjs-com';
 import { themeContext } from '../context/theme/themeContext';
+import TypeWritter from 'typewriter-effect';
 
 const Contact = () => {
 
@@ -146,7 +147,14 @@ const Contact = () => {
                 
                 >
                 <h2 className={`${ (darkmode === false) ? 'text-black' : 'text-white' } sm:text-4xl text-3xl mb-1 font-medium title-font`}>
-                    Contactame
+                    <TypeWritter 
+                        options={{
+                            autoStart: true,
+                            loop: true,
+                            delay: 50,
+                            strings: ['Contactame;']
+                        }}
+                    />
                 </h2>
                 <p className="leading-relaxed mb-5">
                     Puedes mandarme un correo mediante el formulario, o contactarme directamente al Whatsapp.

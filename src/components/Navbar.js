@@ -22,8 +22,8 @@ const Navbar = () => {
     }
 
     return ( 
-        <header className={`sticky top-0 bg-${ darkmode === false ? 'stone-500': 'black'} p-5`}>
-            <div className="container justify-between mx-auto flex flex-wrap p-5 z-10000 flex-row sm:items-center">
+        <header className={`sticky z-20 top-0 bg-${ darkmode === false ? 'stone-500': 'black'} p-5`}>
+            <div className="container justify-between mx-auto flex flex-wrap p-5 flex-row sm:items-center">
                 <h3 className={`hidden md:flex title-font font-medium ${ darkmode === false ? 'text-black hover:opacity-50' : 'text-white hover:opacity-50' } mb-4 md:mb-4`}>
                     <Link to="about" smooth={true} duration={1000} className="text-xl md:text-base cursor-pointer ml-3">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -58,7 +58,7 @@ const Navbar = () => {
                                 : 'text-white hover:opacity-50' }`
                             }
                     >
-                        Desarrollos
+                        Proyectos
                     </Link>
                     <Link 
                         to="skills" 

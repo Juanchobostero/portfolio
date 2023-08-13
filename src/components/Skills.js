@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
 import { skills } from "../data";
 import { themeContext } from '../context/theme/themeContext';
+import TypeWritter from 'typewriter-effect';
 
 const Skills = () => {
 
@@ -17,7 +18,14 @@ const Skills = () => {
                 <div className="text-center mb-20">
                 <ChipIcon className="w-10 inline-block mb-4" />
                 <h1 className={`sm:text-4xl text-3xl font-medium title-font text-white mb-4`}>
-                    Habilidades &amp; Tecnologías
+                    <TypeWritter 
+                        options={{
+                            autoStart: true,
+                            loop: true,
+                            delay: 50,
+                            strings: [`Habilidades && Tecnologías;`]
+                        }}
+                    />
                 </h1>
                 <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
                     Lenguajes y tecnologías que he usado y uso actualmente para desarrollar.

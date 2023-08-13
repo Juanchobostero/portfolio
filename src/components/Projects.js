@@ -3,6 +3,7 @@ import { CodeIcon } from "@heroicons/react/solid";
 import { projects } from "../data";
 import { themeContext } from '../context/theme/themeContext';
 import Project from './Project';
+import TypeWritter from 'typewriter-effect';
 
 const Projects = () => {
 
@@ -15,7 +16,14 @@ const Projects = () => {
                 <div className="flex flex-col w-full mb-20">
                     <CodeIcon className="mx-auto inline-block w-10 mb-4" />
                     <h1 className={`sm:text-4xl text-3xl font-medium title-font mb-4 ${ ( darkmode === false ) ? 'text-gray-900' : 'text-gray-100' }`}>
-                        Desarrollos
+                        <TypeWritter 
+                            options={{
+                                autoStart: true,
+                                loop: true,
+                                delay: 50,
+                                strings: ['<b>Proyectos;</b>']
+                            }}
+                        />
                     </h1>
                     <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
                         Siéntete libre y notificame acerca de bugs/sugerencias.
