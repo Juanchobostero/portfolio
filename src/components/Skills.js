@@ -23,7 +23,7 @@ const Skills = () => {
                             autoStart: true,
                             loop: true,
                             delay: 50,
-                            strings: [`Habilidades && Tecnologías;`]
+                            strings: [`Habilidades & Tecnologías;`]
                         }}
                     />
                 </h1>

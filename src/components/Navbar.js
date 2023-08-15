@@ -23,7 +23,7 @@ const Navbar = () => {
     }
 
     return ( 
-        <header className={`sticky border-t-4 border-indigo-500/100 z-20 h-20 top-0 bg-${ darkmode === false ? 'stone-500': 'black'} p-2`}>
+        <header className={`sticky border-t-4 border-indigo-500/100 z-20 h-20 top-0 bg-gray-700 p-2`}>
             <div className="container py-2 justify-between mx-auto flex flex-wrap p-5 flex-row sm:items-center">
                 <h3 className={`hidden md:flex title-font font-medium ${ darkmode === false ? 'text-black hover:opacity-50' : 'text-white hover:opacity-50' } mb-4 md:mb-4`}>
                     <Link to="about" smooth={true} duration={1000} className="text-xl md:text-base cursor-pointer ml-3">
@@ -142,7 +142,7 @@ const Navbar = () => {
                 <div className="hidden sm:flex ">
                     <Link
                         to="contact"
-                        className="hidden md:flex cursor-pointer inline-flex bg-green-400 text-black font-bold border-0 py-1 px-3 mr-5 focus:outline-none hover:opacity-50 rounded"
+                        className="hidden md:flex cursor-pointer inline-flex bg-green-400 text-white border-0 py-1 px-3 mr-5 focus:outline-none hover:opacity-50 rounded"
                         smooth={true} 
                         duration={1000}
                     >

@@ -12,7 +12,7 @@ const About = () => {
     return ( 
         <section 
           id="about" 
-          className={`${ ( darkmode === false ) ? 'text-gray-900 bg-stone-500' : 'text-gray-100 bg-black' } body-font`}
+          className={`bg-gray-700 body-font`}
         >
           <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
             <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">

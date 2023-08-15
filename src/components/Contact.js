@@ -98,7 +98,7 @@ const Contact = () => {
     
     
     return ( 
-        <section id="contact" className={`relative ${ (darkmode === false) ? 'bg-stone-500 text-black' : 'bg-black text-white' } z-1`}>
+        <section id="contact" className={`relative bg-gray-700 z-1`}>
             <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
                 <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
                 <iframe
@@ -152,12 +152,12 @@ const Contact = () => {
                             autoStart: true,
                             loop: true,
                             delay: 50,
-                            strings: ['Contactame;']
+                            strings: ['Contacto;']
                         }}
                     />
                 </h2>
                 <p className="leading-relaxed mb-5">
-                    Puedes mandarme un correo mediante el formulario, o contactarme directamente al Whatsapp.
+                    Podes mandarme un correo mediante el formulario, o contactarme directamente al Whatsapp.
                 </p>
                 <div className="relative mb-4">
                     <label htmlFor="name" className={`leading-7 text-sm ${ (darkmode === false) ? 'text-gray-900' : 'text-gray-400' }`}>
