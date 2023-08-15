@@ -1,13 +1,9 @@
-import React, { useContext } from 'react';
-import { themeContext } from '../context/theme/themeContext';
+import React from 'react';
 import { Link } from 'react-scroll';
 import TypeWritter from 'typewriter-effect';
 import { AR } from 'country-flag-icons/react/3x2'
 
 const About = () => {
-
-    const themesContext = useContext(themeContext);
-    const { darkmode } = themesContext;
 
     return ( 
         <section 

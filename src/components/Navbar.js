@@ -1,7 +1,5 @@
-import React, { useContext } from 'react';
-import { ArrowRightIcon } from "@heroicons/react/solid";
+import React from 'react';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
-import { themeContext } from '../context/theme/themeContext';
 import AlertDialogSlide from './MuiDialog';
 import { Link } from 'react-scroll';
 import MyApp from './Resume';
@@ -10,22 +8,18 @@ import Stack from '@mui/material/Stack';
 import { deepOrange } from '@mui/material/colors';
 
 const Navbar = () => {
-
-    const themesContext = useContext(themeContext);
-    const { darkmode, lightTheme, darkTheme } = themesContext;
-
-    const handleChange = e => {
-        if(e.target.checked) {
-            lightTheme();
-        } else {
-            darkTheme();
-        }
-    }
+    // const handleChange = e => {
+    //     if(e.target.checked) {
+    //         lightTheme();
+    //     } else {
+    //         darkTheme();
+    //     }
+    // }
 
     return ( 
         <header className={`sticky border-t-4 border-indigo-500/100 z-20 h-20 top-0 bg-gray-700 p-2`}>
             <div className="container py-2 justify-between mx-auto flex flex-wrap p-5 flex-row sm:items-center">
-                <h3 className={`hidden md:flex title-font font-medium ${ darkmode === false ? 'text-black hover:opacity-50' : 'text-white hover:opacity-50' } mb-4 md:mb-4`}>
+                <h3 className={`hidden md:flex title-font font-medium text-white hover:opacity-50 mb-4 md:mb-4`}>
                     <Link to="about" smooth={true} duration={1000} className="text-xl md:text-base cursor-pointer ml-3">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                             <path strokeLinecap="round" strokeLinejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
@@ -52,11 +46,7 @@ const Navbar = () => {
                         to="projects" 
                         smooth={true} 
                         duration={1000} 
-                        className={`hidden md:flex cursor-pointer mr-5 
-                            ${(darkmode === false) 
-                                ? 'text-black hover:opacity-50' 
-                                : 'text-white hover:opacity-50' }`
-                            }
+                        className={`hidden md:flex cursor-pointer mr-5 text-white hover:opacity-50`}
                     >
                         Proyectos
                     </Link>
@@ -64,10 +54,7 @@ const Navbar = () => {
                         to="skills" 
                         smooth={true} 
                         duration={1000} 
-                        className={`hidden md:flex cursor-pointer mr-5 
-                            ${(darkmode === false) 
-                                ? 'text-black hover:opacity-50' 
-                                : 'text-white hover:opacity-50' }`}>
+                        className={`hidden md:flex cursor-pointer mr-5 text-white hover:opacity-50`}>
                         Habilidades
                     </Link>
 
