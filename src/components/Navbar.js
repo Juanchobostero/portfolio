@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { ArrowRightIcon } from "@heroicons/react/solid";
+import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import { themeContext } from '../context/theme/themeContext';
 import AlertDialogSlide from './MuiDialog';
 import { Link } from 'react-scroll';
@@ -22,8 +23,8 @@ const Navbar = () => {
     }
 
     return ( 
-        <header className={`sticky z-20 top-0 bg-${ darkmode === false ? 'stone-500': 'black'} p-5`}>
-            <div className="container justify-between mx-auto flex flex-wrap p-5 flex-row sm:items-center">
+        <header className={`sticky border-t-4 border-indigo-500/100 z-20 h-20 top-0 bg-${ darkmode === false ? 'stone-500': 'black'} p-2`}>
+            <div className="container py-2 justify-between mx-auto flex flex-wrap p-5 flex-row sm:items-center">
                 <h3 className={`hidden md:flex title-font font-medium ${ darkmode === false ? 'text-black hover:opacity-50' : 'text-white hover:opacity-50' } mb-4 md:mb-4`}>
                     <Link to="about" smooth={true} duration={1000} className="text-xl md:text-base cursor-pointer ml-3">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -45,8 +46,7 @@ const Navbar = () => {
                     </Stack>
                 </div>
                 <nav 
-                    className="text-xl mb-4 sm:text-base md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l 
-                    md:border-gray-700 flex flex-nowrap items-center text-base justify-center"
+                    className="text-xl mb-4 sm:text-base md:mr-auto md:ml-4 md:py-1 flex flex-nowrap items-center text-base justify-center"
                 >
                     <Link 
                         to="projects" 
@@ -86,7 +86,7 @@ const Navbar = () => {
                         <MyApp /> {/* RESUME div */}
                     </AlertDialogSlide>
 
-                    {/* Darkmode button MOVILE*/}
+                    {/* Darkmode button MOVILE
                     <div className="flex sm:hidden">
                         <div className="sm: relative inline-block w-12 justify-right select-none transition duration-200 ease-in">
                             <input type="checkbox" name="toggle" id="toggle" onChange={handleChange} className="toggle-checkbox absolute block w-6 h-6 rounded-full bg-gray-500 border-4 appearance-none cursor-pointer"/>
@@ -105,7 +105,7 @@ const Navbar = () => {
                                 </svg>
                             )
                         }
-                    </div>
+                    </div> */}
 
                     {/* <svg 
                         xmlns="http://www.w3.org/2000/svg" 
@@ -118,7 +118,7 @@ const Navbar = () => {
                 </nav>
 
                 {/* Darkmode button WEB*/}
-                <div className="hidden sm:flex mr-1">
+                {/* <div className="hidden sm:flex mr-1">
                     <div className="relative inline-block w-12 mr-2 select-none transition duration-200 ease-in">
                         <input type="checkbox" name="toggle" id="toggle" onChange={handleChange} className="toggle-checkbox absolute block w-6 h-6 rounded-full bg-gray-500 border-4 appearance-none cursor-pointer"/>
                         <label htmlFor="toggle" className="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
@@ -136,18 +136,18 @@ const Navbar = () => {
                             </svg>
                         )
                     }
-                </div>
+                </div> */}
                 
                 {/* Contact Me button*/}
                 <div className="hidden sm:flex ">
                     <Link
                         to="contact"
-                        className="hidden md:flex cursor-pointer inline-flex bg-green-400 text-black font-bold border-0 py-1 px-3 focus:outline-none hover:opacity-50 rounded"
+                        className="hidden md:flex cursor-pointer inline-flex bg-green-400 text-black font-bold border-0 py-1 px-3 mr-5 focus:outline-none hover:opacity-50 rounded"
                         smooth={true} 
                         duration={1000}
                     >
-                        Contactame
-                    <ArrowRightIcon className="w-4 h-5 ml-1" />
+                        Contacto
+                    <KeyboardDoubleArrowDownIcon className="w-4 h-5 ml-1" />
                     </Link>
                 </div>
             </div>

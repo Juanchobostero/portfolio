@@ -12,6 +12,7 @@
     "@testing-library/jest-dom": "^5.16.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "country-flag-icons": "^1.5.7",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^4.1.17",
     "postcss": "^8.4.27",

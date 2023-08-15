@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { themeContext } from '../context/theme/themeContext';
 import { Link } from 'react-scroll';
 import TypeWritter from 'typewriter-effect';
+import { AR } from 'country-flag-icons/react/3x2'
 
 const About = () => {
 
@@ -25,16 +26,17 @@ const About = () => {
                   }}
                 />
               </h1>
-              <p className="mb-8 leading-relaxed">
-                Nacido en la ciudad de Corrientes Capital, <b>Argentina</b>. <br></br>
-                Abierto y predispuesto al aprendizaje continuo para mejorar día a día.
+              <p className="mb-8 leading-relaxed text-lg">
+                30 años. Nacido en la ciudad de Corrientes Capital, <AR title="Argentina" className="inline w-10 h-10"/>. <br></br>
+                Programador Web FULL-STACK. <br></br>
+                <b>Empatía & Trabajo en equipo.</b>
               </p>
               <p className="mb-8 leading-relaxed">
-                JavaScript, Codeigniter & +;
+                JavaScript, Codeigniter y más;
               </p>
               <div className="flex justify-center">
-                <Link to="contact" smooth={true} duration={1000} className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg cursor-pointer">
-                    Contactame
+                <Link to="footer" smooth={true} duration={1000} className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg cursor-pointer">
+                    Redes
                 </Link>
                 <Link to="projects" smooth={true} duration={1000} className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg cursor-pointer">
                     Proyectos
