@@ -5,7 +5,6 @@ import { Link } from 'react-scroll';
 import MyApp from './Resume';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
-import { deepOrange } from '@mui/material/colors';
 
 const Navbar = () => {
     // const handleChange = e => {
@@ -17,8 +16,8 @@ const Navbar = () => {
     // }
 
     return ( 
-        <header className={`sticky border-t-4 border-indigo-500/100 z-20 h-20 top-0 bg-gray-700 p-2`}>
-            <div className="container py-2 justify-between mx-auto flex flex-wrap p-5 flex-row sm:items-center">
+        <header className={`sticky border-t-4 border-indigo-500/100 z-20 h-20 top-0 bg-gray-700 p-3`}>
+            <div className="container justify-between mx-auto flex flex-wrap flex-row sm:items-center">
                 <h3 className={`hidden md:flex title-font font-medium text-white hover:opacity-50 mb-4 md:mb-4`}>
                     <Link to="about" smooth={true} duration={1000} className="text-xl md:text-base cursor-pointer ml-3">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -28,12 +27,14 @@ const Navbar = () => {
                 </h3>
                 <div className='flex md:hidden'>
                     <Stack direction="row" spacing={2}>
-                        <Link to="about" smooth={true} duration={1000} className="text-xl md:text-base cursor-pointer ml-3">
+                        <Link to="about" smooth={true} duration={1000} className="text-xl md:text-base cursor-pointer">
                             <Avatar 
                                 sx={{ 
-                                    bgcolor: deepOrange[500],
-                                    width: 60, 
-                                    height: 60 
+                                    bgcolor: '#00756f',
+                                    width: 50, 
+                                    height: 50,
+                                    marginBottom: '1rem',
+                                    top: 0 
                                 }}>JC
                             </Avatar>
                         </Link>   
