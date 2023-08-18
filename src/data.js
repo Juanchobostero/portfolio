@@ -1,5 +1,13 @@
 export const projects = [
     {
+      title: "E-Commerce MERN",
+      subtitle: "E-Commerce utilizando stack MERN",
+      description:
+        "Este sitio fue realizado con Reactjs.",
+      image: "./ecommerce.gif",
+      link: "https://ecommerce-reactjs-chi.vercel.app/",
+    },
+    {
       title: "Olalá Mayoristas",
       subtitle: "Tienda de joyas",
       description:
@@ -38,14 +46,6 @@ export const projects = [
         "Este sitio fue realizado con Reactjs.",
       image: "./rlp.gif",
       link: "https://www.consultingrlp.com/",
-    },
-    {
-      title: "E-Commerce MERN",
-      subtitle: "E-Commerce utilizando stack MERN",
-      description:
-        "Este sitio fue realizado con Reactjs.",
-      image: "./ecommerce.gif",
-      link: "https://ecommerce-reactjs-chi.vercel.app/",
     }
   ];
   

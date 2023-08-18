@@ -11,11 +11,13 @@ import FloatingWhatsApp from 'react-floating-whatsapp';
 import Footer from './components/Footer';
 import { motion } from "framer-motion";
 import ScrollButton from './components/ScrollButton';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
 
   return (
       <ThemeState>
+        <BrowserRouter>
         <motion.div 
           className="text-gray-400 body-font font-mono"
           initial={{ opacity: 0 }}
@@ -41,6 +43,7 @@ function App() {
             allowClickAway={true}
           />
         </motion.div>
+        </BrowserRouter>
       </ThemeState>
   );
 }
