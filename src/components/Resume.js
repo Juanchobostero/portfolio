@@ -34,7 +34,7 @@ export default function MyApp() {
           <div className="overflow-auto p-0 md:h-20 top-0 bg-gray-700 p-1 flex items-center">
             <Link
               to={pdf}
-              download="Example-PDF-document"
+              download="MARTINEZJUANCRUZCV"
               target="_blank"
               rel="noreferrer"
             >
